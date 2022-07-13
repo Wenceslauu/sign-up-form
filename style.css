@@ -1,0 +1,148 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    min-height: 100%;
+    margin: 0;
+    display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.left-section {
+    flex: 4;
+    background: url(./assets/tree.jpg) no-repeat center/cover;
+    min-width: 40%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
+    color: #fff;
+}
+
+.logo-container {
+    background-color: rgb(0, 0, 0, .5);
+    
+    font-family: 'norsebold', Arial, Helvetica, sans-serif;
+    font-size: 100px;
+
+    margin-top: 25%;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+}
+
+.logo-container img {
+    height: 100px;
+    width: auto;
+}
+
+.left-section p {
+    align-self: center;
+    position: absolute;
+    bottom: 0;
+    font-size: 0.9rem;
+}
+
+.left-section a {
+    color: #fff;
+}
+
+.right-section {
+    flex: 6;
+    background-color: rgb(240, 240, 240);
+}
+
+.text-container {
+    padding: 80px 0 40px 50px;
+    width: 700px;
+    height: 31%;
+
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+section {
+    background-color: #fff;
+    padding: 25px 0 20px 50px;
+    box-shadow: 0 5px 15px rgb(200, 200, 200);
+    height: 38%;
+}
+
+h1 {
+    margin: 0;
+    margin-bottom: 20px;
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+
+form {
+    display: flex;
+    flex-flow: row wrap;
+    row-gap: 20px;
+    width: 780px;
+}
+
+form > div {
+    display: flex;
+    flex-direction: column;
+}
+
+div > label {
+    font-weight: medium;
+    font-size: 0.8rem;
+}
+
+div > input {
+    width: 330px;
+    margin-right: 60px;
+
+    font-size: 1rem;
+    padding: 4px;
+    border: 2px solid #E5E7EB;
+    border-radius: 2px;
+}
+
+div > input:focus {
+    outline: none;
+    border-color: blue;
+    box-shadow: 1px 1px 3px grey;
+}
+
+.error {
+    border-color: red;
+}
+
+input + div {
+    margin-top: 2px;
+    color: red;
+    font-size: 0.8rem;
+}
+
+.btn-container {
+    height: 31%;
+    padding: 30px 0px 0px 50px;
+}
+
+button {
+    background-color: #596D48;
+    color: #fff;
+    padding: 15px 45px;
+    font-size: 1rem;
+    margin-bottom: 15px;    
+
+    border: none;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px grey;
+}
+
+.btn-container a {
+    text-decoration: none;
+    color: #596D48;
+    font-weight: bold;
+}
+
